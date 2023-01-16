@@ -1,6 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var passwordLength =10;
+
 // this is an object referencing the character set the user can choose from 
 var characterSet = {
   upperChar: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -28,21 +28,22 @@ function promptLength() {
   else {
    return passwordLength;
   }
-9
+
 }
 
 
 
 
 // this function generates the password length and outputs it into the generated box 
+var passwordLength =10;
 function getPassword() {
  
   for (var i = 0; i < passwordLength; i++) {
     var randomNumber = Math.floor(Math.random() * characterSet.upperChar.length);
     customGeneratedPassword += characterSet.upperChar.substring(randomNumber,randomNumber+1 );
 }
-
-console.log(getPassword());
+document.getElementById('password').value =customGeneratedPassword;
+console.log(customGeneratedPassword);
 }
 
 
@@ -51,7 +52,7 @@ console.log(getPassword());
 function generatePassword() {
 
   promptLength();
-  generatePassword();
+  getPassword();
 
   // var specialChar = confirm("Click OK to confirm including special characters.");
   // console.log(specialChar);
