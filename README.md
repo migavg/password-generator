@@ -6,11 +6,11 @@ This week’s challenge was to create a random password generator using JavaScri
 
 Using JavaScript and the provided starter code I managed to make something that barely resembles a password generator. 
 
-While creating this application I struggled a lot with how to start the application along with keeping up with what variables did what and what they contained.
+While creating this application I struggled a lot with how to begin this application along with keeping up with what variables did what and what they contained.
 
 The majority of my time was figuring out how a for loop ran and how it would randomly select string characters with the substring method . 
 
-I received some help from peers and luckily received good tips on how to start the application.
+I received some help from peers and luckily received good tips on how to begin this project along with some decent resources.
 
 Unfortunately I did not complete the challenge and didn’t get to meet most of the acceptance criteria.
 
