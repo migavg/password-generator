@@ -1,19 +1,16 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// this is an object referencing the character set the user can choose from 
+// object referencing the character set the user can choose from 
 var characterSet = {
   upperChar: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lowerChar: "abcdefghijklmnopqrstuvwxyz",
   specialChar: "!@#$%^&*()_+-=[]{};:'<>?",
   numericChar: 0123456789
 }
-//  this is an object 
-var userInputs = {
-  passwordLengthMin: 8
-}
-
+// blank variables that should get populated with whatever value the user uses 
 var customGeneratedPassword = "";
+var userInputLength = 8;
 
 // this function prompts a box asking user to input how many characters theyd like in their password 
 function promptLength() {
@@ -26,33 +23,29 @@ function promptLength() {
     promptLength();
   }
   else {
-   return passwordLength;
+    passwordLength = userInputLength;
+    return passwordLength;
   }
-
 }
-
-
-
 
 // this function generates the password length and outputs it into the generated box 
-var passwordLength =10;
+
 function getPassword() {
- 
-  for (var i = 0; i < passwordLength; i++) {
+
+  for (var i = 0; i < userInputLength; i++) {
     var randomNumber = Math.floor(Math.random() * characterSet.upperChar.length);
-    customGeneratedPassword += characterSet.upperChar.substring(randomNumber,randomNumber+1 );
+    customGeneratedPassword += characterSet.upperChar.substring(randomNumber, randomNumber + 1);
+  }
+  console.log(customGeneratedPassword);
+  return customGeneratedPassword;
 }
-document.getElementById('password').value =customGeneratedPassword;
-console.log(customGeneratedPassword);
-}
 
 
-
-// this is the main function that is going to drive all the other functions 
 function generatePassword() {
 
-  promptLength();
-  getPassword();
+  var passwordLength = promptLength();
+  var password = getPassword(passwordLength);
+  return password;
 
   // var specialChar = confirm("Click OK to confirm including special characters.");
   // console.log(specialChar);
