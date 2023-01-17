@@ -14,6 +14,9 @@ I received some help from peers and luckily received good tips on how to start t
 
 Unfortunately I did not complete the challenge and didn’t get to meet most of the acceptance criteria.
 
+Deployed link: https://migavg.github.io/password-generator/
+
+
 
 
 ## Installation
