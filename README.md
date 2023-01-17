@@ -16,6 +16,7 @@ Unfortunately I did not complete the challenge and didn’t get to meet most of 
 
 Deployed link: https://migavg.github.io/password-generator/
 
+![](assets/passwordGeneratorPage.PNG)
 
 
 
